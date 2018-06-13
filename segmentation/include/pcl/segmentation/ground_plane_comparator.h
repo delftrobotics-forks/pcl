@@ -142,13 +142,6 @@ namespace pcl
       {
         plane_coeff_d_ = boost::make_shared<std::vector<float> >(plane_coeff_d);
       }
-      
-      /** \brief Get a pointer to the vector of the d-coefficient of the planes' hessian normal form. */
-      const std::vector<float>&
-      getPlaneCoeffD () const
-      {
-        return (*plane_coeff_d_);
-      }
 
       /** \brief Set the tolerance in radians for difference in normal direction between neighboring points, to be considered part of the same plane.
         * \param[in] angular_threshold the tolerance in radians
